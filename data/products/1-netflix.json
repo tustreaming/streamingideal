@@ -1,0 +1,15 @@
+{
+    "id": 1,
+    "name": "Netflix",
+    "usdPrice": 3.99,
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1024px-Netflix_icon.svg.png",
+    "description": "(Precios x 30 dias)",
+    "stock": true,
+    "productType": "streaming",
+    "suggestions": [
+        { "id": 987686, "title": "Asunto familiar", "imgUrl": "https://pics.filmaffinity.com/a_family_affair-639912317-large.jpg", "trailerUrl": "https://www.youtube.com/embed/CZEidEzNIQs" },
+        { "id": 229221, "title": "Mi querida niña", "imgUrl": "https://image.tmdb.org/t/p/original/dmyJoPy8iiwDKy683EjRTSiARlg.jpg", "trailerUrl": "https://www.youtube.com/embed/2OuhtUy-BGs" },
+        { "id": 426063, "title": "Nosferatu", "imgUrl": "https://m.media-amazon.com/images/M/MV5BY2FhZ2UzEtNWJjOC00NDI1LWFhMTQtMjcxNmQzZmEwNGIzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", "trailerUrl": "https://www.youtube.com/embed/iEbp8QMGzP0" },
+        { "id": 1104845, "title": "Plankton: La pelicula", "imgUrl": "https://i.imgur.com/H4ghC9b.jpeg", "trailerUrl": "https://www.youtube.com/embed/eU0WIo3lAoo" }
+    ]
+}
