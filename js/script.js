@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     const searchSuggestionsList = document.getElementById('search-suggestions');
 
+    // Función para obtener la tasa del dólar.
     const fetchDollarRate = async () => {
         try {
             const tasaUrl = `https://open.er-api.com/v6/latest/USD`;
@@ -39,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // FUNCIÓN CORREGIDA: Ahora maneja errores de archivos individuales.
     const fetchProducts = async () => {
         try {
             const response = await fetch('data/product-list.json');
@@ -48,18 +50,32 @@ document.addEventListener('DOMContentLoaded', () => {
             const productFiles = await response.json();
             
             const productPromises = productFiles.map(async (fileName) => {
-                const productResponse = await fetch(`data/products/${fileName}`);
-                if (!productResponse.ok) {
-                    throw new Error(`Error al cargar el producto: ${fileName}`);
+                try {
+                    const productResponse = await fetch(`data/products/${fileName}`);
+                    if (!productResponse.ok) {
+                        throw new Error(`Error al cargar el producto: ${fileName}`);
+                    }
+                    return await productResponse.json();
+                } catch (error) {
+                    // Si un archivo de producto falla, lo registramos pero continuamos con los demás.
+                    console.error(error.message);
+                    return null; // Devolvemos null para que el Promise.all no se detenga.
                 }
-                return await productResponse.json();
             });
 
-            products = await Promise.all(productPromises);
-            renderProducts();
+            // Filtramos los resultados nulos para evitar errores.
+            const fetchedProducts = await Promise.all(productPromises);
+            products = fetchedProducts.filter(p => p !== null);
+
+            if (products.length === 0) {
+                document.getElementById('product-container').innerHTML = '<p style="text-align:center;">No se pudo cargar ningún producto. Por favor, revise los archivos.</p>';
+            } else {
+                renderProducts();
+            }
+            
             fetchDollarRate();
         } catch (error) {
-            console.error('No se pudo cargar los productos:', error);
+            console.error('No se pudo cargar la lista de productos:', error);
             document.getElementById('product-container').innerHTML = '<p style="text-align:center;">Error al cargar los productos. Por favor, inténtelo de nuevo más tarde.</p>';
         }
     };
