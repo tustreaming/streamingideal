@@ -1,0 +1,16 @@
+{
+    "id": 11,
+    "name": "Giftcard PlayStation",
+    "usdPrice": 0,
+    "imgUrl": "https://www.mtcgame.com/api/img-loader?url=https%3A%2F%2Fcdn5.mtcgame.com%2FImages%2FCategory%2Fa7cf543b-974b-421f-818e-7aee367db177.jpg&w=1920&q=75",
+    "description": "Tarjeta de regalo con saldo para la PlayStation Store.",
+    "detailsDescription": "Disponible.",
+    "stock": true,
+    "productType": "giftcard",
+    "pricingOptions": [
+        { "value": 10, "realPrice": 15.00, "productDescription": "Giftcard de $10" },
+        { "value": 20, "realPrice": 25.00, "productDescription": "Giftcard de $20" },
+        { "value": 50, "realPrice": 0, "productDescription": "Giftcard de $50 (no disponible)" },
+        { "value": 100, "realPrice": 115.00, "productDescription": "Giftcard de $100" }
+    ]
+}
