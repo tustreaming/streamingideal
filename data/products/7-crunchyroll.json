@@ -1,0 +1,15 @@
+{
+        "id": 7,
+        "name": "Crunchyroll",
+        "usdPrice": 2,
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png",
+        "description": "(Precio x 30 dias)",
+        "stock": true,
+        "productType": "streaming",
+        "suggestions": [
+            { "id": 129, "title": "El Viaje de Chihiro", "imgUrl": "https://image.tmdb.org/t/p/original/laXrmaTRuroArSPfsGlvTbeWxVA.jpg", "trailerUrl": "https://www.youtube.com/embed/5Fgq4Osh6XQ" },
+            { "id": 149, "title": "Akira", "imgUrl": "https://image.tmdb.org/t/p/original/vjPt8HYymLOkRv82x9JwVO7M2a5.jpg", "trailerUrl": "https://www.youtube.com/embed/SQ_hhKhrABs" },
+            { "id": 372058, "title": "Your Name", "imgUrl": "https://image.tmdb.org/t/p/original/iaiy3tg9QVkDpObm1IGqmbC9A5C.jpg", "trailerUrl": "https://www.youtube.com/embed/N0nvoAv5q8M" },
+            { "id": 1311031, "title": "Guardianes de la Noche: Kimetsu no Yaiba", "imgUrl": "https://image.tmdb.org/t/p/original/6N21gcFbhT4ocdTU4MGREAaM5Vz.jpg", "trailerUrl": "https://www.youtube.com/embed/7wUN1ovta_c" }
+        ]
+}
