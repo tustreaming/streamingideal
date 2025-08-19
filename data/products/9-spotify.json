@@ -1,0 +1,10 @@
+{
+        "id": 9,
+        "name": "Spotify",
+        "usdPrice": 4,
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png",
+        "description": "(Precios x 30 dias)",
+        "stock": true,
+        "productType": "streaming",
+        "suggestions": []
+}
