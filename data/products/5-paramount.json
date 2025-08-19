@@ -1,0 +1,15 @@
+{
+        "id": 5,
+        "name": "Paramount Plus",
+        "usdPrice": 2,
+        "imgUrl": "https://logodownload.org/wp-content/uploads/2021/03/paramount-plus-logo-0.png",
+        "description": "(Precios x 30 dias)",
+        "stock": true,
+        "productType": "streaming",
+        "suggestions": [
+            { "id": 27205, "title": "Inception", "imgUrl": "https://image.tmdb.org/t/p/original/tXQvtRWfkUUnWJAn2tN3jERIUG.jpg", "trailerUrl": "https://www.youtube.com/embed/RV9L7ui9Cn8" },
+            { "id": 101299, "title": "Los Juegos del Hambre", "imgUrl": "https://image.tmdb.org/t/p/original/oxnKI1qiHz7xC0mNthC7dSqTcot.jpg", "trailerUrl": "https://www.youtube.com/embed/0KKwAWsh9TQ" },
+            { "id": 118, "title": "Titanic", "imgUrl": "https://image.tmdb.org/t/p/original/VMOt5scbGmBKDvkfHjZN6Ki54i.jpg", "trailerUrl": "https://www.youtube.com/embed/tA_qMdzvCvk" },
+            { "id": 13, "title": "Forrest Gump", "imgUrl": "https://image.tmdb.org/t/p/original/azV6hV99lYkdhydsQbJCI6FqMl4.jpg", "trailerUrl": "https://www.youtube.com/embed/aSEPD9w_dLM" }
+        ]
+}
