@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const searchInput = document.getElementById('search-input');
     const searchSuggestionsList = document.getElementById('search-suggestions');
+    const productContainer = document.getElementById('product-container');
 
     // Función para obtener la tasa del dólar.
     const fetchDollarRate = async () => {
@@ -40,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // FUNCIÓN CORREGIDA: Ahora maneja errores de archivos individuales.
     const fetchProducts = async () => {
         try {
             const response = await fetch('data/product-list.json');
@@ -57,18 +57,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                     return await productResponse.json();
                 } catch (error) {
-                    // Si un archivo de producto falla, lo registramos pero continuamos con los demás.
                     console.error(error.message);
-                    return null; // Devolvemos null para que el Promise.all no se detenga.
+                    return null;
                 }
             });
 
-            // Filtramos los resultados nulos para evitar errores.
             const fetchedProducts = await Promise.all(productPromises);
             products = fetchedProducts.filter(p => p !== null);
 
             if (products.length === 0) {
-                document.getElementById('product-container').innerHTML = '<p style="text-align:center;">No se pudo cargar ningún producto. Por favor, revise los archivos.</p>';
+                productContainer.innerHTML = '<p style="text-align:center;">No se pudo cargar ningún producto. Por favor, revise los archivos.</p>';
             } else {
                 renderProducts();
             }
@@ -76,12 +74,11 @@ document.addEventListener('DOMContentLoaded', () => {
             fetchDollarRate();
         } catch (error) {
             console.error('No se pudo cargar la lista de productos:', error);
-            document.getElementById('product-container').innerHTML = '<p style="text-align:center;">Error al cargar los productos. Por favor, inténtelo de nuevo más tarde.</p>';
+            productContainer.innerHTML = '<p style="text-align:center;">Error al cargar los productos. Por favor, inténtelo de nuevo más tarde.</p>';
         }
     };
 
     const renderProducts = () => {
-        const productContainer = document.getElementById('product-container');
         productContainer.innerHTML = '';
         products.forEach(product => {
             const productDiv = document.createElement('div');
@@ -128,6 +125,52 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    // FUNCIÓN DE FILTRO CORREGIDA
+    const filterProducts = (searchTerm) => {
+        const productElements = document.querySelectorAll('.product');
+        const exchangeRateInfo = document.querySelector('.exchange-rate-info');
+        const noResultsMessage = document.getElementById('no-results-message');
+
+        if (searchTerm.length > 0) {
+            exchangeRateInfo.style.display = 'none';
+        } else {
+            exchangeRateInfo.style.display = 'block';
+        }
+
+        let resultsFound = false;
+        productElements.forEach(productEl => {
+            const productName = productEl.getAttribute('data-product-name').toLowerCase();
+            if (productName.includes(searchTerm)) {
+                productEl.style.display = 'flex';
+                resultsFound = true;
+            } else {
+                productEl.style.display = 'none';
+            }
+        });
+
+        if (!resultsFound && searchTerm.length > 0) {
+            if (!noResultsMessage) {
+                const noResultsDiv = document.createElement('div');
+                noResultsDiv.id = 'no-results-message';
+                noResultsDiv.style.textAlign = 'center';
+                noResultsDiv.style.marginTop = '20px';
+                noResultsDiv.innerHTML = '<p>No se encontraron productos para su búsqueda.</p>';
+                document.getElementById('main-content').appendChild(noResultsDiv);
+            } else {
+                noResultsMessage.style.display = 'block';
+            }
+        } else {
+            if (noResultsMessage) {
+                noResultsMessage.style.display = 'none';
+            }
+        }
+    };
+    
+    // Agregamos el evento de búsqueda
+    searchInput.addEventListener('input', (event) => {
+        filterProducts(event.target.value.toLowerCase());
+    });
+    
     const updatePrices = () => {
         products.forEach(product => {
             const bsPriceElement = document.getElementById(`price-bs-${product.id}`);
@@ -144,27 +187,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCartUI();
     };
 
-    const filterProducts = (event) => {
-        const searchTerm = searchInput.value.toLowerCase();
-        const productElements = document.querySelectorAll('.product');
-        const exchangeRateInfo = document.querySelector('.exchange-rate-info');
-
-        if (searchTerm.length > 0) {
-            exchangeRateInfo.style.display = 'none';
-        } else {
-            exchangeRateInfo.style.display = 'block';
-        }
-
-        productElements.forEach(productEl => {
-            const productName = productEl.getAttribute('data-product-name').toLowerCase();
-            if (productName.includes(searchTerm)) {
-                productEl.style.display = 'flex';
-            } else {
-                productEl.style.display = 'none';
-            }
-        });
-    };
-    
     window.handleAddToCart = (productId) => {
         const product = products.find(p => p.id === productId);
         if (product && product.productType === 'giftcard') {
