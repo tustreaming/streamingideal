@@ -1,0 +1,10 @@
+{
+        "id": 10,
+        "name": "Canva",
+        "usdPrice": 0,
+        "imgUrl": "https://www.pngmart.com/files/23/Canva-Logo-PNG-File.png",
+        "description": "(Precio x 30 dias)",
+        "stock": false,
+        "productType": "streaming",
+        "suggestions": []
+}
