@@ -1,0 +1,15 @@
+{
+        "id": 3,
+        "name": "Max",
+        "usdPrice": 1.5,
+        "imgUrl": "https://childrenofthedigitalage.org/wp-content/uploads/2025/07/HBO-Max-Safety-Settings-2025.png",
+        "description": "(Precio x 30 dias)",
+        "stock": true,
+        "productType": "streaming",
+        "suggestions": [
+            { "id": 238, "title": "El Padrino", "imgUrl": "https://image.tmdb.org/t/p/original/ApiEfzSkrqS4m1L5a2GwWXzIiAs.jpg", "trailerUrl": "https://www.youtube.com/embed/iOyQx7MXaz0" },
+            { "id": 111, "title": "El Señor de los Anillos: El Retorno del Rey", "imgUrl": "https://image.tmdb.org/t/p/original/mWuFbQrXyLk2kMBKF9TUPtDwuPx.jpg", "trailerUrl": "https://www.youtube.com/embed/5GjUcOGPHtM" },
+            { "id": 12445, "title": "Harry Potter: Las reliquias de la muerte parte 2 ", "imgUrl": "https://image.tmdb.org/t/p/original/wjKy2wSlDiLLLIkM7tHnxsXG8Tp.jpg", "trailerUrl": "https://www.youtube.com/embed/HguSMW8XveQ" },
+            { "id": 259909, "title": "Dexter: Resurrecion", "imgUrl": "https://image.tmdb.org/t/p/original/9kJnJI2X6xMtX7JPtMsxO8SeB9v.jpg", "trailerUrl": "https://www.youtube.com/embed/uPXZiDRb2i8" }
+        ]
+}
