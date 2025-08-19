@@ -1,0 +1,17 @@
+[
+     {
+        "id": 2,
+        "name": "Disney Plus",
+        "usdPrice": 2.5,
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Disney_plus_icon.png",
+        "description": "(Precio x 30 dias)",
+        "stock": true,
+        "productType": "streaming",
+        "suggestions": [ 
+            { "id": 1022796, "title": "Deadpool & Wolverine", "imgUrl": "https://image.tmdb.org/t/p/original/6aY3OzCIdxoBMYdiH5s17rWFFFA.jpg", "trailerUrl": "https://www.youtube.com/embed/UzFZR2dRsSY" },
+            { "id": 1025537, "title": "Intensamente 2", "imgUrl": "https://image.tmdb.org/t/p/original/4HEJdpcmTGm3BWWic31G4aCnuC6.jpg", "trailerUrl": "https://www.youtube.com/embed/xiC2iXTXHxw" },
+            { "id": 260513, "title": "Los Increíbles 2", "imgUrl": "https://image.tmdb.org/t/p/original/bJjc0217DuipdwJ0wyi3I4j6soR.jpg", "trailerUrl": "https://www.youtube.com/embed/6RBr1v9_umA" },
+            { "id": 299534, "title": "Vengadores: Endgame", "imgUrl": "https://image.tmdb.org/t/p/original/br6krBFpaYmCSglLBWRuhui7tPc.jpg", "trailerUrl": "https://www.youtube.com/embed/KdL8ucqi1F8" }
+        ]
+    }
+]
