@@ -1,0 +1,10 @@
+{
+        "id": 6,
+        "name": "Flujo TV",
+        "usdPrice": 0,
+        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpTOsy_182EgViE_H_VWL1cslDFH-ETQWBqQ&s",
+        "description": "(Precio x 30 dias)",
+        "stock": false,
+        "productType": "streaming",
+        "suggestions": []
+}
