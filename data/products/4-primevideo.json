@@ -1,0 +1,15 @@
+{
+        "id": 4,
+        "name": "Prime Video",
+        "usdPrice": 2,
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Amazon_Prime_Video_logo_%282024%29.svg/1024px-Amazon_Prime_Video_logo_%282024%29.svg.png",
+        "description": "(Precios x 30 dias)",
+        "stock": true,
+        "productType": "streaming",
+        "suggestions": [
+            { "id": 843527, "title": "La idea de ti", "imgUrl": "https://image.tmdb.org/t/p/original/y1WpsgfBA5GywXIuqLm9D4aQHNd.jpg", "trailerUrl": "https://www.youtube.com/embed/t-fcs1ydbVA" },
+            { "id": 872585, "title": "Oppenheimer", "imgUrl": "https://image.tmdb.org/t/p/original/5t05uhX5ULn8Um2f1ZuznVvIffU.jpg", "trailerUrl": "https://www.youtube.com/embed/gMPEbJQun68" },
+            { "id": 76479, "title": "The boys", "imgUrl": "https://image.tmdb.org/t/p/original/5kgY14oisiHcJ4zq0Xgq1e97PHm.jpg", "trailerUrl": "https://www.youtube.com/embed/RzDdLdM59kw" },
+            { "id": 157336, "title": "Interestellar", "imgUrl": "https://image.tmdb.org/t/p/original/c2a7KgNATJm4bfMcTLifGJpb9rU.jpg", "trailerUrl": "https://www.youtube.com/embed/LYS2O1nl9iM" }
+        ]
+}
