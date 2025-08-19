@@ -1,0 +1,15 @@
+{
+        "id": 8,
+        "name": "Vix",
+        "usdPrice": 2,
+        "imgUrl": "https://i.pinimg.com/736x/9e/9a/e9/9e9ae9ca207ea166c3d5c4f1ad9ffe1f.jpg",
+        "description": "(Precios x 30 dias)",
+        "stock": true,
+        "productType": "streaming",
+        "suggestions": [
+            { "id": 670864, "title": "La Bamba", "imgUrl": "https://image.tmdb.org/t/p/original/fiByqrT5qqkEZKUWUdomgABPa4x.jpg", "trailerUrl": "https://www.youtube.com/embed/OaEWHrwF0fc" },
+            { "id": 1391, "title": "Y tu mamá también", "imgUrl": "https://image.tmdb.org/t/p/original/izw41PkE8y891yraO6fN1tCNmOG.jpg", "trailerUrl": "https://www.youtube.com/embed/inc0vS58ZKg" },
+            { "id": 211954, "title": "No se aceptan devoluciones", "imgUrl": "https://image.tmdb.org/t/p/original/5h4UApKNe62K8hoUCc151kQ56Uc.jpg", "trailerUrl": "https://www.youtube.com/embed/Ua5qcs7RHiY" },
+            { "id": 833971, "title": "La Casa de las Flores", "imgUrl": "https://image.tmdb.org/t/p/original/t8ZE8klqFhyvqzLb2qLpzFAJEhj.jpg", "trailerUrl": "https://www.youtube.com/embed/-HMAMDxyNgw" }
+        ]
+}
