@@ -2,7 +2,7 @@
     "id": 1,
     "name": "Netflix",
     "usdPrice": 3.50,
-    "imgUrl": https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Netflix-new-icon.png/250px-Netflix-new-icon.png",
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Netflix-new-icon.png/250px-Netflix-new-icon.png",
     "description": "(Precios x 30 dias)",
     "stock": true,
     "productType": "streaming",
