@@ -2,7 +2,7 @@
     "id": 1,
     "name": "Netflix",
     "usdPrice": 3.50,
-    "imgUrl": https://static.vecteezy.com/system/resources/previews/017/396/814/non_2x/netflix-mobile-application-logo-free-png.png",
+    "imgUrl": https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Netflix-new-icon.png/250px-Netflix-new-icon.png",
     "description": "(Precios x 30 dias)",
     "stock": true,
     "productType": "streaming",
