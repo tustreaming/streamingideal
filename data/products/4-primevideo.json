@@ -2,7 +2,7 @@
         "id": 4,
         "name": "Prime Video",
         "usdPrice": 2.5,
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Amazon_Prime_Video_logo_%282024%29.svg/1024px-Amazon_Prime_Video_logo_%282024%29.svg.png",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Amazon_Prime_Video_logo_%282024%29.svg/960px-Amazon_Prime_Video_logo_%282024%29.svg.png",
         "description": "(Precios x 30 dias)",
         "stock": true,
         "productType": "streaming",
